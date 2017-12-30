@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minWidth="400.0" prefHeight="529.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.CategoryFormController">
+   <children>
+      <VBox prefHeight="529.0" prefWidth="546.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="111.0" prefWidth="375.0">
+               <children>
+                  <Label text="Информация о категории">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="260.0" prefWidth="506.0">
+               <children>
+                  <VBox alignment="CENTER" minWidth="250.0" prefHeight="255.0" prefWidth="78.0">
+                     <children>
+                        <Label fx:id="labelProductTitle111" text="Название категории:">
+                           <padding>
+                              <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="260.0" prefWidth="172.0">
+                     <children>
+                        <TextField fx:id="textCategoryName" layoutX="25.0" layoutY="173.0" minWidth="250.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="118.0" prefWidth="506.0">
+               <children>
+                  <Button fx:id="buttonSave" minWidth="100.0" mnemonicParsing="false" onAction="#saveCategory" text="Сохранить">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="buttonBack" contentDisplay="RIGHT" minWidth="100.0" mnemonicParsing="false" onAction="#goBack" text="Назад">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="buttonLogOut" contentDisplay="RIGHT" minWidth="100.0" mnemonicParsing="false" onAction="#logOut" text="Выход">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minWidth="400.0" prefHeight="529.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.UserFormController">
+   <children>
+      <VBox prefHeight="529.0" prefWidth="546.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="111.0" prefWidth="375.0">
+               <children>
+                  <Label text="Информация о пользователе">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="260.0" prefWidth="506.0">
+               <children>
+                  <VBox prefHeight="255.0" prefWidth="78.0">
+                     <children>
+                        <Label fx:id="labelUId" text="ИД:">
+                           <padding>
+                              <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="labelProductTitle1111" layoutX="10.0" layoutY="10.0" text="Логин:">
+                           <padding>
+                              <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="labelProductTitle11111" layoutX="10.0" layoutY="61.0" text="Пароль:">
+                           <padding>
+                              <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="labelProductTitle111112" layoutX="10.0" layoutY="112.0" text="Имя:">
+                           <padding>
+                              <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="labelProductTitle1111121" layoutX="10.0" layoutY="163.0" text="Адресс:">
+                           <padding>
+                              <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="260.0" prefWidth="172.0">
+                     <children>
+                        <Label fx:id="labelId" minWidth="100.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="textUserName" layoutX="25.0" layoutY="20.0" minWidth="100.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="textPassword" layoutX="10.0" layoutY="66.0" minWidth="100.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="textFirstName" layoutX="25.0" layoutY="71.0" minWidth="100.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="textAdress" layoutX="25.0" layoutY="173.0" minWidth="100.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="260.0" prefWidth="79.0">
+                     <children>
+                        <Label fx:id="labelUserId" text="Фамилия:">
+                           <padding>
+                              <Insets bottom="15.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="labelProductTitle1111111" layoutX="10.0" layoutY="10.0" text="Почта:">
+                           <padding>
+                              <Insets bottom="15.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="labelProductTitle11111111" layoutX="10.0" layoutY="61.0" prefHeight="51.0" prefWidth="56.0" text="Права:">
+                           <padding>
+                              <Insets bottom="15.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="labelProductTitle111111111" layoutX="10.0" layoutY="112.0" text="Возраст:">
+                           <padding>
+                              <Insets bottom="15.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="labelProductTitle1111111111" layoutX="10.0" layoutY="163.0" text="Пол:">
+                           <padding>
+                              <Insets bottom="15.0" top="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="260.0" prefWidth="172.0">
+                     <children>
+                        <TextField fx:id="textLastName" minWidth="100.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="textEmail" layoutX="25.0" layoutY="20.0" minWidth="100.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <ComboBox fx:id="comboBoxRole" minWidth="100.0" prefHeight="31.0" prefWidth="220.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                        <TextField fx:id="textAge" layoutX="10.0" layoutY="97.0" minWidth="100.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <ComboBox fx:id="comboBoxGender" minWidth="100.0" prefHeight="31.0" prefWidth="220.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="118.0" prefWidth="506.0">
+               <children>
+                  <Button fx:id="buttonSave" minWidth="100.0" mnemonicParsing="false" onAction="#saveUser" text="Сохранить">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="buttonBack" contentDisplay="RIGHT" minWidth="100.0" mnemonicParsing="false" onAction="#goBack" text="Назад">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="buttonLogOut" contentDisplay="RIGHT" minWidth="100.0" mnemonicParsing="false" onAction="#logOut" text="Выход">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

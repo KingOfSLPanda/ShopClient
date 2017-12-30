@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minWidth="400.0" prefHeight="574.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.StatisticsController">
+   <children>
+      <VBox prefHeight="585.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="519.0" prefWidth="600.0">
+               <children>
+                  <PieChart fx:id="pieChartCategories" prefHeight="519.0" prefWidth="605.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="buttonBack" contentDisplay="RIGHT" minWidth="100.0" mnemonicParsing="false" onAction="#goBack" text="Назад">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="buttonLogOut" contentDisplay="RIGHT" minWidth="100.0" mnemonicParsing="false" onAction="#logOut" text="Выход">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
